@@ -1,0 +1,242 @@
+/* homepage css */
+.rights{
+font-size:1vw;
+font-family:Comic Sans MS;
+}
+body#indexbody{
+    margin: 0px;
+    padding: 0px;
+    background-color: red;
+}
+h1 img#logoindex {float:left;margin:5px 0px 0px 50px;}
+
+#raitlogo {
+    float: right;
+    margin-right: 50px;
+}
+#codered{
+    color:red;
+    margin-top:0px;
+    font-size: 7vw;
+    margin-bottom: 5px;
+    float:left;
+}
+header#indexheader{
+    background-color: grey;
+}
+
+img#patientindex{
+    margin-top: 80px;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+
+div#logodiv{
+    background-color: black;
+    margin-bottom: 0px;
+}
+
+ul#ulindex {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 1.8vw;
+    font-family:Comic Sans MS;
+}
+
+li.liindex {
+    display:inline-block;
+}
+
+li.liindex a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li.liindex a:hover {
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 10px;
+}
+.active{
+    background-color: white;
+    border-radius: 10px;
+}
+
+img#patientindex{
+    float: left;
+}
+
+div.contentDivision{
+    max-width: 700px;
+    margin-right: 40px;
+    margin-left: 40px;
+    color: #3e3c3c;
+    background-color:  #fff;
+    border-radius: 22px;
+    padding: 30px 27px;
+    margin-bottom: 100px;
+    float: right;
+}
+
+section.sectionTitle {
+    font-family: 'Montserrat'
+}
+
+section.sectionTitle li>span {
+    position:  absolute;
+    left:  0;
+}
+
+section.sectionTitle h2 {
+    font-size: 2em;
+    font-weight: 500;
+    color: #ffffff;
+    text-align:  center;
+    text-transform: uppercase;
+}
+
+p.whyneed{
+	font-family:Comic Sans MS;
+    font-size: 1.2vw;
+    text-align: left;
+    margin-left: auto;
+}
+
+ul#points{
+    list-style-type: disc;
+}
+
+/* Blood bank registration form */
+
+body#bloodbank{
+    background-color: black;
+    background-image: url("img/formimg.png");
+    background-repeat: no-repeat;
+    background-position: center ;
+    margin-top: 20%;
+    height: 456px;
+    width: 730px;
+    font-family: sans-serif;
+}
+
+div.loginbox{
+ margin-top:70px;
+    color: black;
+    left: 50%;
+    padding: 40px;
+    width: 50%;
+}
+
+body#bloodbank input[type=text],input[type=number],input[type=mobile],input[type=file],input[type=date],input[type=email],body#bloodbank input[type=password], body#bloodbank select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+body#bloodbank input[type=submit] {
+    width: 40%;
+    background-color: darkgray;
+    color: black;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-left: 30%;
+    margin-right: 50%;
+    font-size: 20px;
+}
+
+body#bloodbank input[type=submit]:hover {
+    background-color: black;
+	color:white;
+}
+
+div.loginbox {
+    background-color: rgba(169, 169, 169, 1);
+	border-radius:25px;
+	color:black;
+
+}
+button{
+width: 20%;
+    padding: 10px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+	background-color:grey;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+button:hover{
+color:white;
+background-color:black;
+cursor: pointer;
+
+}
+/*footer bar */
+.loginsocial{
+    font-size: 25px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px;
+
+}
+
+.loginsocial:hover {
+    color: #fff;
+    background-color: #333333;
+
+}
+
+.bg1 {background-color: #3b5998;text-decoration: none;}
+.bg2 {background-color: #1da1f2;text-decoration: none;}
+.bg3 {background-color: #ea4335;text-decoration: none;}
+.bg4 {background-color: #d6249f;text-decoration: none;}
+
+.rights{
+font-family:Comic Sans MS;
+}
+
+@media screen and (max-width:400px)
+{
+    #ulindex {
+        float:none;
+        display:block;
+        width:100%;
+        text-align:left;
+    }
+}
+
+footer {
+    left: 0;
+	padding-top:30px;
+    bottom: 50px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.flex-c-m {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}

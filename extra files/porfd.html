@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="styles.css">
+	<link rel="icon" type="image/gif/png" href="img/e19a5d55e84046c6582d92cba78734bd.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="formchange.js"></script>
+
+	
+
+</head>
+<style>
+    img{
+        border-radius: 50%;
+}
+</style>
+<body id="bloodbank">
+<div class="loginbox">
+<center><h1>User Profile</h1></center>
+<center><p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+<p><label for="file" style="cursor: pointer;">Upload Photo</label></p>
+<p><img id="output" width="200" /></p>
+</center>
+<button type="button" onclick="clickEdit()" style="float:right;" >Edit Details</button><br/>
+
+<script>
+
+function clickEdit() {
+document.getElementById('fname').disabled = false;
+document.getElementById('mobile').disabled = false;
+document.getElementById('gender').disabled = false;
+document.getElementById('email').disabled = false;
+document.getElementById('bgroup').disabled = false;
+document.getElementById('dob').disabled = false;
+document.getElementById('weight').disabled = false;
+document.getElementById('state').disabled = false;
+document.getElementById('city').disabled = false;
+document.getElementById('local').disabled = false;
+document.getElementById('file').disabled = false;
+document.getElementById('submit').disabled=false;
+}
+</script>
+
+
+<script>
+var loadFile = function(event) {
+    var image = document.getElementById('output');
+    image.src = URL.createObjectURL(event.target.files[0]);
+};
+
+</script>
+
+
+    <form action="editindividualdata.php" style="alignment: center">
+         
+   
+        <div id="hideind">
+<table width="100%" >
+                <tr>
+				<td colspan="3">
+            <label for="full name">Full Name</label>
+            <input type="text" placeholder="Enter full name" name="fname" id="fname" disabled>
+                </td>
+				<td >
+                    <label for="Mobile Number">Mobile Number</label>
+                    <input type="number" placeholder="Enter Mobile Number" id="mobile" name="mobile" disabled>
+                </td>
+				<td >
+                            <label for="Gender">Gender</label>
+                            <select id="gender" disabled>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+
+                            </select>                        </td>
+							
+				</tr>
+
+
+                    <tr>
+					<td colspan="2">
+                    <label for="email">Email ID</label>
+                    <input type="email" placeholder="Enter email id" id="email" name="email" disabled>
+                </td>
+                        <td >
+                            <label for="Blood Group">Blood Group</label>
+                        <select id="bgroup" name="bgroup" disabled> <option value="A+">A+</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B-" selected>B-</option>
+                            <option value="O+">O+</option>
+                            <option value="O-">O-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                        </select>
+                        </td>
+                        <td >
+                           <label for="dob">Date Of Birth</label>
+            <input type="date" placeholder="Enter Date Of Birth" id="dob" name="dob" disabled>
+</td>
+            <td>
+			<label for="Weight">Weight</label>
+            <input type="number" placeholder="Enter Weight" id="weight" name="weight" disabled>
+            </td>
+			
+                    </tr>
+
+					<tr>
+                    <td colspan="3">
+            <label for="state" >State</label><br/>
+        <select id="state" name="state" onchange="change();">
+<?php
+
+$state=mysqli_query($conn,"select DISTINCT city_state from citydatabase order by city_state");
+while($row=mysqli_fetch_array($state))
+{	
+?>
+<option><?php echo $row["city_state"]; ?></option>
+<?php
+}
+?>	
+        </select>
+                        </td>
+                    
+                    <td colspan="3">
+        <label for="city">City</label><br/>
+            <select id="city" name="city">
+<?php
+		$city=mysqli_query($conn,"select DISTINCT city_name from citydatabase order by city_name");
+while($row=mysqli_fetch_array($city))
+{	
+?>
+<option><?php echo $row["city_name"]; ?></option>
+<?php
+}
+?>
+            </select>
+                        </td>
+                </tr>
+            <tr><td colspan="6">
+        <label for="local">Local Address</label><br/>
+                <input type="text" id="local" name="local" placeholder="Enter Local Address" disabled></td></tr>
+            <tr><td colspan="3">
+                <label for="password">Enter Password</label><br/>
+                <input type="password" id="password" name="password" placeholder="Enter Password"></td>
+            <td colspan="3">
+        <label for="password">Confirm Password</label><br/>
+                <input type="password" id="password" name="cpassword" placeholder="Confirm Password"></td>
+				</tr>
+        </div></table>
+<input type="submit" id="submit" value="Update Details" disabled>
+    </form>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit details</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+</head>
+<body id="bloodbank">
+<div class="loginbox">
+    <h2>Edit User Details</h2>
+
+    <form style="alignment: center">
+
+        <div id="hideind">
+            <table width="100%">
+                <tr><td colspan="4" >
+                    <label for="full name">Full Name</label>
+                    <input type="text" placeholder="Enter full name" name="full name">
+                </td></tr>
+
+
+                <tr>
+                    <td colspan="2">
+                        <label for="Blood Group">Blood Group</label>
+                        <select> <option value="A+">A+</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B-" selected>B-</option>
+                            <option value="O+">O+</option>
+                            <option value="O-">O-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                        </select>
+                    </td>
+                    <td >
+                        <label for="Gender">Gender</label>
+                        <select>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other" >Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr><td colspan="2" >
+                    <label for="age">Age</label>
+                    <input type="text" placeholder="Enter Age" name="age" required>
+                </td>
+                    <td>
+                        <label for="Weight">Weight</label>
+                        <input type="text" placeholder="Enter Weight" name="Weight" required>
+                    </td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <table width="100%" >
+            <div id="add">
+                <tr>
+                    <td colspan="2" width="50%">
+                        <label for="email">Email ID</label>
+                        <input type="text" placeholder="Enter Email id" name="email" required>
+                    </td>
+                    <td >
+                        <label for="Mobile Number">Mobile Number</label>
+                        <input type="text" placeholder="Enter Mobile Number" name="Mobile Number" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="state" >State</label><br/>
+                        <select id="state" name="state">
+                            <option value="maharashtra">Maharashtra</option>
+                            <option value="gujrat">Gujrat</option>
+                            <option value="delhi">Delhi</option>
+                        </select>
+                    </td>
+                    <td >
+                        <label for="district">District</label><br/>
+                        <select id="district" name="district">
+                            <option value="raigad">Raigad</option>
+                            <option value="thane">Thane</option>
+                            <option value="mumbai">Mumbai</option>
+                        </select>
+                    </td>
+                    <td >
+                        <label for="city">City</label><br/>
+                        <select id="city" name="city">
+                            <option value="pen">Pen</option>
+                            <option value="panvel">Panvel</option>
+                            <option value="nerul">Nerul</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr><td colspan="3">
+                    <label for="local">Local Address</label><br/>
+                    <input type="text" id="local" name="local" placeholder="Enter Local Address"></td></tr>
+                <tr><td colspan="2">
+                    <label for="password">Enter New Password</label><br/>
+                    <input type="password" id="password" name="password" placeholder="Enter New Password"></td>
+                    <td>
+                        <label for="password">Confirm New Password</label><br/>
+                        <input type="password" id="password" name="password" placeholder="Confirm New Password"></td>
+                </tr>
+            </div></table>
+        <input type="submit" value="Update">
+    </form>
+</body>
+</html>
