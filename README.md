@@ -23,7 +23,6 @@ section.</p>
  <br/>
 <p align="center">
 <img src="https://raw.githubusercontent.com/Sankalpamokal/codered/master/img/readme_imgs/home.JPG" width="900" height="450">
- <br/>   <em>Home age</em>
 </p>
 <p align="center">
 <img src="https://raw.githubusercontent.com/Sankalpamokal/codered/master/img/readme_imgs/home2.JPG" width="900" height="450">
