@@ -20,4 +20,26 @@ can get instructions about post donation care and what care donor should take af
 This section is available with google translate feature which makes it more interactive to users.
 If anyone have questions/queries regarding our website can contact us by using the Contact
 section.</p>
+ <br/>
+<p align="center">
+<img src="https://raw.githubusercontent.com/Sankalpamokal/codered/master/img/readme_imgs/home.JPG" width="900" height="450">
+ <br/>   <em>Home age</em>
+</p>
+<p align="center">
+<img src="https://raw.githubusercontent.com/Sankalpamokal/codered/master/img/readme_imgs/home2.JPG" width="900" height="450">
+ <br/>   <em>Home Page</em>
+</p>
+<p align="center">
+<img src="https://raw.githubusercontent.com/Sankalpamokal/codered/master/img/readme_imgs/login.JPG" width="900" height="450">
+ <br/>   <em>Login age</em>
+</p>
+<p align="center">
+<img src="https://raw.githubusercontent.com/Sankalpamokal/codered/master/img/readme_imgs/need_blood.JPG" width="900" height="450">
+ <br/>   <em>Search Donor Page</em>
+</p>
+<p align="center">
+<img src="https://raw.githubusercontent.com/Sankalpamokal/codered/master/img/readme_imgs/post_req.JPG" width="900" height="450">
+ <br/>   <em>Request Blood Page</em>
+</p>
+
 
