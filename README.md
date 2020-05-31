@@ -1,4 +1,4 @@
-# codered
+# Codered - Online Blood Bank System
 
 <h3>Description</h3>
 <p>The proposed Blood Bank management system helps the people who need blood by giving
